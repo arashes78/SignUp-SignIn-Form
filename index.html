@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arash Esmaealbeigy</title>
+    <script src="./vendor/jquery-3.2.1.min.js"></script>
+	<link rel="icon" type="image/png" href="images/politician.svg" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="wrapper">
+        <div class="container" id="container">
+
+            <div class="Signin">
+                <form class="SignForm" id="SignForm" name="SignForm">
+                    <h1 class="form-label">ورود</h1>
+                    <div class="wrap-input">
+                        <input class="Input" type="text" id="lusername" name="lusername" required
+                            placeholder="نام کاربری" oninvalid="this.setCustomValidity('لطفا نام کاربری را وارد کنید')"
+                            oninput="this.setCustomValidity('')">
+                        <span class="fa fa-user" id="icon" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="wrap-input">
+                        <input class="Input" type="password" id="lpassword" name="lpassword" required
+                            placeholder="رمز عبور" oninvalid="this.setCustomValidity('لطفا رمز عبور را وارد کنید')"
+                            oninput="this.setCustomValidity('')">
+                        <span class="fa fa-lock" id="icon" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="check2">
+                        <input class="switch2" type="checkbox" id="switch2" name="switch2" />
+                        <label class="switch2" for="switch2" name="switch2">Toggle</label>
+                        <span class="agree"><strong>مرا به خاطر داشته باش</strong></span>
+                    </div>
+
+                    <button class="button2" style="color: #24799E;" type="submit" name="button" id="button">
+                        ورود
+                    </button>
+                </form>
+            </div>
+            <div class="Register">
+                <form class="RegForm" id="RegForm" name="RegForm">
+                    <h1 class="form-label">ثبت نام</h1>
+
+                    <div class="wrap-input">
+                        <input class="Input" type="text" id="username" name="username" required
+                            placeholder="نام کاربری">
+                        <span class="fa fa-user" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="wrap-input">
+                        <input class="Input" type="text" id="email" name="email" required placeholder="ایمیل">
+                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="wrap-input">
+                        <input class="Input" type="password" id="password" name="password" required
+                            placeholder="رمز عبور" oninvalid="this.setCustomValidity('لطفا یک رمز عبور مشخص کنید')"
+                            oninput="this.setCustomValidity('')">
+                        <span class="fa fa-lock" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="wrap-input">
+                        <input class="Input" type="password" id="cpassword" name="cpassword" required
+                            placeholder="تکرار رمز عبور" oninput="this.setCustomValidity('')">
+                        <span class="fa fa-key" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="check">
+                        <input class="switch" type="checkbox" id="switch" name="switch" />
+                        <label class="switch" for="switch" name="switch">Toggle</label>
+                        <span class="agree"><strong>آیا شما با <a class="link" href="#">شرایط</a> موافق
+                                هستید؟</strong></span>
+                    </div>
+
+                    <button class="button" style="color: #33A3A0; " type="submit" name="button" id="button">
+                        ثبت نام
+                    </button>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <div class="tilt js-tilt" data-tilt>
+                            <img class="titil" src="images/Untitled-3.png" alt="IMG">
+                        </div>
+                        <h1 style="padding-bottom: 30px;">خوش آمدید</h1>
+                        <p style="font-size: large; margin-bottom: 10px;">آیا حساب کاربری ندارید؟</p>
+                        <button class="ghost" id="signIn">ثبت نام</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <img class="profile" src="./images/2020-02-06 04.50.jpg">
+                        <h1 style="margin-top: 220px;">سلام دوست عزیز</h1>
+                        <p style="font-size: 20px; ">برای ادامه لطفا یک حساب کاربری بسازید</p><br>
+                        <p style="font-size: large; margin-top: 130px;margin-bottom: 10px;">آیا حساب کاربری دارید؟</p
+                            style="font-size: large; margin-bottom: 10px;">
+                        <button class="ghost" id="signUp">ورود</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./vendor/Validation.js"></script>
+    <script src="./vendor/dynamic.js"></script>
+    <script src="./vendor/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1
+        })
+    </script>
+</body>
+
+</html>
