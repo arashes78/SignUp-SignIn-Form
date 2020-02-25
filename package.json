@@ -1,0 +1,22 @@
+{
+  "name": "solleta",
+  "version": "1.0.0",
+  "description": "solleta signup/signin page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./style/sass/main.scss ./style/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arashes78/SignUp-SignIn-Form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arashes78/SignUp-SignIn-Form/issues"
+  },
+  "homepage": "https://github.com/arashes78/SignUp-SignIn-Form#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
