@@ -22,7 +22,6 @@ $(document).ready(function() {
     } else {
       username.setCustomValidity('فقط حروف انگلیسی مجاز است');
     }
-
   }
 
   function validateLUsername() {
