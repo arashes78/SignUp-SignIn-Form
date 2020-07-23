@@ -22,7 +22,6 @@ $(document).ready(function() {
     } else {
       username.setCustomValidity('فقط حروف انگلیسی مجاز است');
     }
-
   }
 
   function validateLUsername() {
@@ -105,7 +104,7 @@ $(document).ready(function() {
 </span>`);
   });
 
-  $("#RegForm").submit(function(event) {
+  $("#register__form").submit(function(event) {
     event.preventDefault();
 
     if ($(".switch").is(":checked")) {
@@ -118,7 +117,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#SignForm").submit(function(event) {
+  $("#signin__form").submit(function(event) {
     event.preventDefault();
     $(".container").fadeOut(500);
     $(".wrapper").append('<h1  style="font-size: 50px;">وارد شدید</h1>');

@@ -3,48 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=false">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arash Esmaealbeigy</title>
-    <script src="./vendor/jquery-3.2.1.min.js"></script>
-	<link rel="icon" type="image/png" href="images/politician.svg" />
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
-    <link rel="stylesheet" type="text/css" href="./style/normalize.css">
+    <link rel="icon" type="image/png" href="images/Soleta.png" />
+    <link rel="stylesheet" type="text/css" href="./style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
-    <ul class="bg-bubbles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <!--------Page Content-------->
     <div class="wrapper">
         <div class="container" id="container">
+            <!-------SignIn Content------->
+            <div class="container__signin">
+                <form class="signin__form" id="signin__form">
 
-            <div class="Signin">
-                <form class="SignForm" id="SignForm" name="SignForm">
-                    <h1 class="form-label">ورود</h1>
-                    <div class="wrap-input">
-                        <input class="Input" type="text" id="lusername" name="lusername" required
-                            placeholder="نام کاربری" oninvalid="this.setCustomValidity('لطفا نام کاربری را وارد کنید')"
+                    <h1 class="form--label">ورود</h1>
+
+                    <div class="form--input">
+                        <input type="text" id="lusername" name="lusername" required placeholder="نام کاربری"
+                            oninvalid="this.setCustomValidity('لطفا نام کاربری را وارد کنید')"
                             oninput="this.setCustomValidity('')">
-                        <span class="fa fa-user" id="icon" aria-hidden="true"></span>
+                        <span class="fa fa-user" id="signin--icons" aria-hidden="true"></span>
                     </div>
 
-                    <div class="wrap-input">
-                        <input class="Input" type="password" id="lpassword" name="lpassword" required
-                            placeholder="رمز عبور" oninvalid="this.setCustomValidity('لطفا رمز عبور را وارد کنید')"
+                    <div class="form--input">
+                        <input type="password" id="lpassword" name="lpassword" required placeholder="رمز عبور"
+                            oninvalid="this.setCustomValidity('لطفا رمز عبور را وارد کنید')"
                             oninput="this.setCustomValidity('')">
-                        <span class="fa fa-lock" id="icon" aria-hidden="true"></span>
+                        <span class="fa fa-lock" id="signin--icons" aria-hidden="true"></span>
                     </div>
 
                     <div class="check2">
@@ -53,37 +42,39 @@
                         <span class="agree"><strong>مرا به خاطر داشته باش</strong></span>
                     </div>
 
-                    <button class="button2" style="color: #24799E;" type="submit" name="button" id="button">
+                    <button class="btn btn__form btn__form--signin" type="submit" name="button" id="button">
                         ورود
                     </button>
                 </form>
             </div>
-            <div class="Register">
-                <form class="RegForm" id="RegForm" name="RegForm">
-                    <h1 class="form-label">ثبت نام</h1>
+            <!---------------------------->
+            <!------Register Content------>
+            <div class="container__register">
+                <form class="register__form" id="register__form" name="register__form">
 
-                    <div class="wrap-input">
-                        <input class="Input" type="text" id="username" name="username" required
-                            placeholder="نام کاربری">
-                        <span class="fa fa-user" aria-hidden="true"></span>
+                    <h1 class="form--label">ثبت نام</h1>
+
+                    <div class="form--input">
+                        <input type="text" id="username" name="username" required placeholder="نام کاربری">
+                        <span class="fa fa-user" id="register--icons" aria-hidden="true"></span>
                     </div>
 
-                    <div class="wrap-input">
-                        <input class="Input" type="text" id="email" name="email" required placeholder="ایمیل">
-                        <span class="fa fa-envelope" aria-hidden="true"></span>
+                    <div class="form--input">
+                        <input type="text" id="email" name="email" required placeholder="ایمیل">
+                        <span class="fa fa-envelope" id="register--icons" aria-hidden="true"></span>
                     </div>
 
-                    <div class="wrap-input">
-                        <input class="Input" type="password" id="password" name="password" required
-                            placeholder="رمز عبور" oninvalid="this.setCustomValidity('لطفا یک رمز عبور مشخص کنید')"
+                    <div class="form--input">
+                        <input type="password" id="password" name="password" required placeholder="رمز عبور"
+                            oninvalid="this.setCustomValidity('لطفا یک رمز عبور مشخص کنید')"
                             oninput="this.setCustomValidity('')">
-                        <span class="fa fa-lock" aria-hidden="true"></span>
+                        <span class="fa fa-lock" id="register--icons" aria-hidden="true"></span>
                     </div>
 
-                    <div class="wrap-input">
-                        <input class="Input" type="password" id="cpassword" name="cpassword" required
-                            placeholder="تکرار رمز عبور" oninput="this.setCustomValidity('')">
-                        <span class="fa fa-key" aria-hidden="true"></span>
+                    <div class="form--input">
+                        <input type="password" id="cpassword" name="cpassword" required placeholder="تکرار رمز عبور"
+                            oninput="this.setCustomValidity('')">
+                        <span class="fa fa-key" id="register--icons" aria-hidden="true"></span>
                     </div>
 
                     <div class="check">
@@ -93,45 +84,74 @@
                                 هستید؟</strong></span>
                     </div>
 
-                    <button class="button" style="color: #33A3A0; " type="submit" name="button" id="button">
+                    <button class="btn btn__form btn__form--register" type="submit" name="button" id="button">
                         ثبت نام
                     </button>
                 </form>
             </div>
-
-            <div class="overlay-container">
+            <!---------------------------->
+            <!------Overlay contents------>
+            <div class="container__overlay">
                 <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <div class="tilt js-tilt" data-tilt>
-                            <img class="titil" src="images/Untitled-3.png" alt="IMG">
+                    <div class="overlay__panel overlay--left">
+                        <div class="js-tilt" data-tilt>
+                            <img class="overlay__image" src="images/Slice.png" alt="IMG">
                         </div>
-                        <h1 style="padding-bottom: 30px;">خوش آمدید</h1>
-                        <p style="font-size: large; margin-bottom: 10px;">آیا حساب کاربری ندارید؟</p>
-                        <button class="ghost" id="signIn">ثبت نام</button>
+                        <div class="overlay__text--register">
+                            <h1>خوش آمدید</h1>
+                        </div>
+                        <div class="overlay__button--register">
+                            <p>آیا حساب کاربری ندارید؟</p><br>
+                            <button class="btn btn__overlay--register" id="signIn">ثبت نام</button>
+                        </div>
                     </div>
-                    <div class="overlay-panel overlay-right">
-                        <img class="profile" src="./images/2020-02-06 04.50.jpg">
-                        <h1 style="margin-top: 220px;">سلام دوست عزیز</h1>
-                        <p style="font-size: 20px; ">برای ادامه لطفا یک حساب کاربری بسازید</p><br>
-                        <p style="font-size: large; margin-top: 130px;margin-bottom: 10px;">آیا حساب کاربری دارید؟</p
-                            style="font-size: large; margin-bottom: 10px;">
-                        <button class="ghost" id="signUp">ورود</button>
+                    <div class="overlay__panel overlay--right">
+                        <img class="overlay__logo" src="./images/Soleta.png">
+                        <div class="overlay__text--signin">
+                            <h1>سلام دوست عزیز</h1>
+                            <p>برای ادامه لطفا یک حساب کاربری بسازید</p><br>
+                        </div>
+                        <div class="overlay__button--signin">
+                            <p>آیا حساب کاربری دارید؟</p><br>
+                            <button class="btn btn__overlay--signin" id="signUp">ورود</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <!---------------------------->
         </div>
-    </div>
-    </div>
 
+        <!-----Background Content----->
+        <div class="background">
+            <span class="element--two"><img src="./images/bg_animation/cub_two.png" alt=""></span>
+            <span class="element--three"><img src="./images/bg_animation/cub_three.png" alt=""></span>
+            <span class="element--four"><img src="./images/bg_animation/cub_four.png" alt=""></span>
+            <span class="element--five"><img src="./images/bg_animation/block_five.png" alt=""></span>
+            <span class="element--six"><img src="./images/bg_animation/cub_six.png" alt=""></span>
+            <span class="element--seven"><img src="./images/bg_animation/cub_seven.png" alt=""></span>
+            <span class="element--eight"><img src="./images/bg_animation/cub_eight.png" alt=""></span>
+            <span class="element--nine"><img src="./images/bg_animation/cub_four.png" alt=""></span>
+        </div>
+        <!---------------------------->
+    </div>
+    <!---------------------------->
+    <!----------Scripts----------->
+
+    <script src="./vendor/jquery-3.4.1.min.js"></script>
+    <script src="./vendor/Dynamic.js"></script>
     <script src="./vendor/Validation.js"></script>
-    <script src="./vendor/dynamic.js"></script>
+
+    <!---------------------------->
+    <!--Tilt Animation For Image-->
+
     <script src="./vendor/tilt.jquery.min.js"></script>
     <script>
         $('.js-tilt').tilt({
             scale: 1
         })
     </script>
+
+    <!---------------------------->
 </body>
 
 </html>
